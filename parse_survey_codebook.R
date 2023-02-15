@@ -9,6 +9,9 @@ library(dplyr);
 # all the different ways that they phrased questions having the pattern of:
 #    "During the last X months, did you ... ?"
 
+# Pay attention to your web browser-- it will likely ask you whether you want to
+# allow 'tidyverse' to access your Google account. Accept, and make sure you
+# check the box that also give access to Google sheets.
 gs4_auth();
 
 inputdata <- c(

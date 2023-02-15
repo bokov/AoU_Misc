@@ -1,5 +1,6 @@
 library(rio);
 library(googlesheets4);
+library(dplyr);
 
 # This is a script that pulls the AoU survey codebook and extracts questions
 # meeting a particular criteria. Currently, questions about the participant's

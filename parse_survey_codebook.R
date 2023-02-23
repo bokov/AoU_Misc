@@ -18,7 +18,7 @@ inputdata <- c(
   codebook = 'https://docs.google.com/spreadsheets/d/15b4KEchI9fUcaG42DVEf9ikl6UpVtdM0GZrjFMKMrR4/edit?usp=sharing'
 );
 
-props <- read_sheet(inputdata['codebook']);
+props <- sheet_properties(inputdata['codebook']);
 sapply(props$name[-1], print);
 cb <- sapply(props$name[-1], function(xx) read_sheet(inputdata['codebook'],sheet=xx),simplify=F);
 
